@@ -26,3 +26,4 @@ function showFormToAddImage()
         return false;
     });
 }
+
