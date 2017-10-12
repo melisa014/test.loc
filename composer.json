@@ -1,0 +1,11 @@
+{
+    "require": {
+        "components/jquery": "dev-master"
+    },
+    "repositories": [
+        {
+           "type": "vcs",
+           "url": "https://github.com/components/jquery"
+        }
+    ]
+}

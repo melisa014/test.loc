@@ -4,13 +4,13 @@
         <title>JavaScript</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="/JS/jquery-3.2.1.js"></script>
+        <script src="/vendor/components/jquery/jquery.js"></script>
         <script src="newjavascript.js"></script>
         <link rel="icon" href="favicon.png" type="image/png">
     </head>
     <body>
         <div style="padding-top : 30px">
-            <h1>Привет, Мир!</h1>
+<!--            <h1>Привет, Мир!</h1>-->
             <?php
             if (isset($_GET['name'])) {
                 echo "Привет, ", $_GET['name'], "! Я знаю, тебе ", $_GET['age'], ";)";
