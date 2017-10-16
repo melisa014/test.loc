@@ -73,5 +73,32 @@ function init()
     }
     console.log(getSums(numbers));
     
+    // Структуры данных -> Псевдомассив аргументов "arguments"
+    // #1 Как в функции отличить отсутствующий аргумент от undefined?
+
+    function f(x) {
+        if(arguments.length > 0) {
+            console.log('Аргументы есть, ' + 1);
+        }
+        else console.log('Нет ни одного аргумента, ' + 0);
+      // выведите 1, если первый аргумент есть, и 0 - если нет
+    }
+    f(undefined); // 1
+    f(); // 0
+    
+    // #2 Напишите функцию sum(...), которая возвращает сумму всех своих аргументов:
+    function sum(){
+        var sum = 0;
+        for(var i = 0; i < arguments.length; i++) {
+            sum += arguments[i];
+        }
+        return sum;
+    }
+    console.log(sum(1, 2, 3));
+    console.log(sum(5, 7));
+
+
+    
+    
 }
 
